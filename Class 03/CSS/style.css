@@ -7,7 +7,7 @@
 }
 
 body{
-  background-color: chartreuse;
+  background-color: #A4BAFA;
   colour: #1E201D;
   font-family: gotham, helvetica, verdana, sans-serif;
   font-size: 16px;
@@ -21,7 +21,9 @@ header{
   padding: 2em;
   /* margin-bottom: 2em; */
   text-align: center;
-  /* border-bottom: solid 1em #F8FAF7; */
+  border-style: dotted;
+  border-width: medium;
+
 
 }
 
@@ -33,6 +35,7 @@ header h1 {
 
 header h2 {
   text-transform: capitalize;
+  padding-top: 10px;
   font-size: 1.5em;
   color: grey;
 }
@@ -46,6 +49,10 @@ nav{
   padding: 1em;
 }
 
+a{
+  padding: 20px;
+}
+
 /* ==== Article info goes here ==== */
 
 article{
@@ -56,6 +63,7 @@ article{
   padding: 1em;
 
 }
+
 
 article h2{
   font-family: Georgia, times, serif;
@@ -79,6 +87,7 @@ figcaption {
   font-size: 1em;
   font-style: italic;
   text-align: center;
+  padding: 1em;
 }
 
 article p {
