@@ -1,0 +1,53 @@
+/* CSS RESET*/
+
+
+*{
+  margin: 0 ;
+  padding:0 ;
+  box-sizing: border-box;
+}
+
+body {
+
+  font-size: 20px;
+}
+
+header h1{
+  font-family: serif,georgia,;
+  text-align: center;
+  color:#b86739;
+  padding: 20px;
+  font-size: 20px;
+  background: #f2a39d;
+}
+
+header h2{
+  font-family: serif,georgia,;
+  text-align: center;
+  color:#b86739;
+  font-size: 40;
+  padding: 50px;
+  border-bottom: 4px solid #b86739;
+}
+
+nav{
+  background: white;
+  display:flex;
+}
+
+nav a:link{
+color:#b86739;
+background: white;
+padding: 20px 20px;
+text-decoration: none;
+flex-grow:1;
+text-align: center;
+}
+
+nav a:visited {
+  color:#eee;
+}
+nav a:hover {
+  color:#f2c4c4;
+  background: #fff;
+}
