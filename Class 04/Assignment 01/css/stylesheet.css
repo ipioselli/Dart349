@@ -176,6 +176,7 @@ section.aboutme article h4{
 }
 
 .assignments{
+
   padding:20px;
 }
 
@@ -214,6 +215,10 @@ section.assignmentsFlex{
 section.midterm{
   padding: 50px;
 height:60vh;
+}
+
+.assignments h4{
+  letter-spacing: 10px;
 }
 
 footer{
