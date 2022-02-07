@@ -1,78 +1,75 @@
 /* CSS RESET*/
-
-
-*{
-  margin: 0 ;
-  padding:0 ;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-
   font-size: 20px;
 }
 
-header h1{
+header h1 {
   letter-spacing: 5px;
-  font-family: serif,georgia,;
+  font-family: serif, georgia, ;
   text-align: center;
-  color:#7e799c;
+  color: #7e799c;
   padding: 20px;
   font-size: 20px;
   background: #cec9f0;
 }
 
-header h2{
+header h2 {
   letter-spacing: 5px;
-  font-family: serif,georgia,;
+  font-family: serif, georgia, ;
   text-align: center;
-  color:#7e799c;
+  color: #7e799c;
   font-size: 40;
   padding: 50px;
   border: 2px solid #7e799c;
 }
 
-
-
-nav{
+/* NAV PROPERTIES*/
+nav {
   background: white;
   border-bottom: 2px solid #7e799c;
-  display:flex;
+  display: flex;
 }
 
 nav a:visited {
-  color:#7e799c;
+  color: #7e799c;
 }
 
-nav a:link{
-color:#7e799c; /*dark purple*/
-background: white;
-padding: 20px 20px;
-text-decoration: none;
-flex-grow:1;
-text-align: center;
+nav a:link {
+  color: #7e799c;
+  /*dark purple*/
+  background: white;
+  padding: 20px 20px;
+  text-decoration: none;
+  flex-grow: 1;
+  text-align: center;
 }
 
 nav a:hover {
-  color:#f2c4c4;
+  color: #f2c4c4;
   background: #fff;
 }
 
+/*image Class*/
 section.image {
   background: url(../images/header.jpg) no-repeat fixed center center;
   background-size: cover;
-  width:100%;
-  height:90vh;
-  display:flex;
+  width: 100%;
+  height: 90vh;
+  display: flex;
   flex-direction: column;
   justify-content: left;
   align-items: left;
   border-bottom: 2px solid #7e799c;
-
 }
 
-  .image h3{
-  color:#7e799c;
+.image h3 {
+  color: #7e799c;
   font-size: 80px;
   letter-spacing: .05em;
   text-align: left;
@@ -80,154 +77,116 @@ section.image {
   padding-left: 60px;
 }
 
-
-h4{
-  /* padding: 30px; */
+h4 {
   text-align: center;
-  color:#7e799c;
+  color: #7e799c;
   font-size: 50px;
-
   letter-spacing: .05em;
   margin-top: 20px;
 }
-.assignmentsFlex a:link{
-  color:#7e799c; /*dark purple*/
+
+/*Class aboutme*/
+section.aboutme {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  padding: 0;
+}
+
+section.aboutme article {
+  background: white;
+  width: 60%;
+  padding: 10px;
+}
+
+section.aboutme article h4 {
+  padding: 30px;
+  text-align: center;
+  color: #7e799c;
+  font-size: 50px;
+  letter-spacing: .05em;
+  margin-top: 50px;
+}
+
+.aboutme p {
+  padding-left: 60px;
+  padding-right: 80px;
+  color: #7e799c;
+  font-size: 30px;
+}
+
+.aboutme aside {
+  width: 30%;
+  padding: 20px;
+}
+
+.aboutme img {
+  height: 70vh;
+  padding: 50px;
+}
+
+/*Class assignments and assignmentsFlex*/
+.assignments {
+  padding: 20px;
+}
+
+.assignments h4 {
+  letter-spacing: 10px;
+}
+
+section.assignmentsFlex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+}
+
+.assignmentsFlex div {
+  border-radius: 10px;
+  width: 300px;
+  height: 400px;
+  background: #cad0de;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.assignmentsFlex a:link {
+  color: #7e799c;
+  /*dark purple*/
   padding: 20px 20px;
   text-decoration: none;
   text-align: center;
 }
 
-.assignmentsFlex a:visited{
-  color:#7e799c;
-
-}
-section.gallery{
-  padding-left:50px;
-  padding-right: 50px;
-  display:flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  width:100%;
-  height: 60vh;
+.assignmentsFlex a:visited {
+  color: #7e799c;
 }
 
-.gallery h4{
-  padding: 30px;
-  text-align: center;
-  color:#7e799c;
-  font-size: 50px;
-
-  letter-spacing: .05em;
-  margin-top: 50px;
-}
-
-
-
-
-
-section.aboutme {
-  width:100%;
-  height: 70vh;
-  display:flex;
-  padding:0;
-
-}
-
-section.aboutme article {
-  background: white;
-  width:60%;
-  padding: 10px;
-
-}
-
-
-section.aboutme article h4{
-
-  padding: 30px;
-  text-align: center;
-  color:#7e799c;
-  font-size: 50px;
-
-  letter-spacing: .05em;
-  margin-top: 50px;
-
-}
-
-.aboutme p{
-
-  padding-left: 60px;
-  padding-right: 80px;
-  color:#7e799c;
-  font-size: 30px;
-
-}
-
-.aboutme aside{
-
-  width:30%;
-  padding: 20px;
-}
-
-
-.aboutme img {
-  height:70vh;
-  padding:50px;
-}
-
-.assignments{
-
-  padding:20px;
-}
-
-section.assignmentsFlex{
-  display:flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  width:100%;
-  height: 60vh;
-}
-
-.assignmentsFlex div{
+.assignmentsFlex a:hover {
+  background: url(../images/cake.jpg) no-repeat center center;
+  background-size: cover;
   border-radius: 10px;
-  width:300px;
-  height:400px;
-  background: #cad0de;
-  font-size: 50px;
-  display:flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
-.assignments a{
-
-}
-.assignmentsFlex a:hover{
-
-    background: url(../images/cake.jpg) no-repeat center center;
-    background-size: cover;
-    border-radius: 10px;
-    width:100%;
-    height:100%;
-}
-
-section.midterm{
+/**Class midterm**/
+section.midterm {
   padding: 50px;
-height:60vh;
+  height: 60vh;
 }
 
-.assignments h4{
-  letter-spacing: 10px;
-}
-
-footer{
+/*FOOTER PROPERTIES*/
+footer {
   border-top: 2px solid #7e799c;
   letter-spacing: 5px;
   font-size: 20px;
   padding: 30px;
-  color:#7e799c;
+  color: #7e799c;
   background: #cec9f0;
   text-align: center;
-
 }
