@@ -1,0 +1,91 @@
+/* DESKTOP FIRST */
+
+*{
+  box-sizing: border-box;
+}
+
+/* style the body */
+body{
+  font-family: sans-serif;
+  margin: 0;
+}
+
+/* info before header */
+.top{
+  padding: 10px;
+  text-align: center;
+  background: #e6b1aa;
+  color: white;
+  border-bottom: #544e4d solid;
+  border-bottom-width: thin;
+
+}
+
+/* header info */
+.header{
+  padding: 50px;
+  text-align: center;
+  background:#e8d6d3;
+  color: #544e4d;
+  border-bottom: #544e4d solid;
+  border-bottom-width: thin;
+
+}
+
+.header h1{
+  font-size: 40px;
+}
+
+.header h2{
+  font-size: 15px;
+}
+
+/* style navigation bar */
+.navbar{
+  display: flex;
+  background-color: #b8a19e;
+  border-bottom: #544e4d solid;
+  border-bottom-width: thin;
+}
+
+/* style links in nav bar */
+.navbar a{
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  flex: 1;
+}
+
+.navbar a:hover{
+  background-color: #6e5958;
+  color: black;
+}
+
+.grid{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+}
+
+
+.side{
+  flex:40%;
+  background-color: #e3a896;
+  color:black;
+  padding: 30px;
+}
+
+.main{
+  flex:60%;
+  background-color: white;
+  color:black;
+  background-image: 
+
+}
+
+/* .main figure{
+  padding: 20px;
+  align-content: right;
+} */
