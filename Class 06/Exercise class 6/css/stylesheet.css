@@ -71,6 +71,9 @@ body{
 }
 
 
+
+
+
 .side{
 
   text-align: center;
@@ -111,6 +114,61 @@ body{
   font-size: 20px;
 }
 
+.bottom{
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+}
+
+.side02{
+  width:100%;
+  text-align: center;
+  position:relative;
+  flex:55%;
+  background-color: #e3a896;
+  color:black;
+  padding: 30px;
+
+}
+
+.side02 a{
+  background-color: white;
+  padding:20px;
+  text-decoration: none;
+  color:black;
+  font-style: italic;
+
+}
+
+.side02 a:hover{
+  background-color: #f0c7b9;
+}
+
+.side02 h3{
+  color:white;
+
+  font-size: 80px;
+  text-transform: capitalize;
+}
+
+.side02 p{
+  margin-bottom: 50px;
+  color: white;
+  font-size: 20px;
+}
+
+.main02{
+  flex:45%;
+  height:60vh;
+  background: url(../assets/images/rings.jpg)no-repeat center center;
+  background-size: cover;
+  background-color: #e3a896;
+  color:black;
+
+}
+
 .main{
   flex:55%;
   height:70vh;
@@ -121,8 +179,9 @@ body{
 }
 
 .middle{
-  background-color:#b3b0d1;
-  padding:50px;
+  background-color:#f0d9c2;
+
+  padding:90px;
   color:white;
   font-size: 20px;
   text-align: center;
@@ -143,10 +202,29 @@ body{
   background-color: #d6d3ed;
 }
 
+footer{
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  background:#e8d6d3;
+  color: #544e4d;
+  border-top:#544e4d solid;
+  border-top-width: thin;
+  text-transform: capitalize;
+
+}
+
 
 /* tablet */
 @media(max-width: 780px){
   .main{
+    background-position: center;
+    background-size: contain;
+      background-color: #e3a896;
+  }
+
+  .main02{
     background-position: center;
     background-size: contain;
       background-color: #e3a896;
@@ -161,5 +239,7 @@ body{
 
 .main{order:2;}
 .side{order:1;}
+.side02{order:3;}
+.main02{order:4;}
 
 }
