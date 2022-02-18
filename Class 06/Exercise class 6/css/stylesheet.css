@@ -242,6 +242,13 @@ footer{
   .row, .navbar{
     flex-direction: column;
 }
+.grid{
+  height:20%;
+}
+
+.middle{
+  font-size: 20px
+}
 
 .main{order:2;}
 .side{order:1;}
