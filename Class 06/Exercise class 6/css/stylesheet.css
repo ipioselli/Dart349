@@ -68,6 +68,7 @@ body{
   flex-direction: row;
   flex-wrap: wrap;
   font-family: sans-serif;
+  height:80vh;
 }
 
 
@@ -81,7 +82,7 @@ body{
   flex:45%;
   background-color: #e3a896;
   color:black;
-  padding: 30px;
+  padding: 10px;
 
 }
 
@@ -93,6 +94,7 @@ body{
   text-decoration: none;
   color:black;
   font-style: italic;
+
 
 }
 
@@ -112,6 +114,9 @@ body{
   margin-bottom: 50px;
   color: white;
   font-size: 20px;
+}
+.side figure{
+  padding-bottom:20px;
 }
 
 .bottom{
@@ -172,7 +177,7 @@ body{
 
 .main{
   flex:55%;
-  height:70vh;
+  height:80vh;
   background: url(../assets/images/earrings.jpg)no-repeat center center;
   background-size: cover;
   background-color: #e3a896;
