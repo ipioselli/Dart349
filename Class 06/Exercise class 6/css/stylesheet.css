@@ -12,7 +12,7 @@ body{
 
 /* info before header */
 .top{
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   background: #e6b1aa;
   color: white;
@@ -63,6 +63,7 @@ body{
 }
 
 .grid{
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -71,21 +72,56 @@ body{
 
 
 .side{
-  flex:40%;
+  flex:45%;
   background-color: #e3a896;
   color:black;
   padding: 30px;
 }
 
-.main{
-  flex:60%;
+div.shopnow {
+
+  text-align: center;
   background-color: white;
-  color:black;
-  background-image: 
+  width: 50%;
+  padding:20px;
+}
+
+.shopnow a{
+
+  text-decoration:none;
+  color: black;
 
 }
 
-/* .main figure{
-  padding: 20px;
-  align-content: right;
-} */
+.shopnow a:hover{
+
+}
+
+.side h3{
+  color:white;
+  text-align: center;
+  font-size: 80px;
+  text-transform: capitalize;
+}
+
+.side p{
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.main{
+  flex:55%;
+  height: 90vh;
+  background: url(../assets/images/earrings.jpg)no-repeat center center;
+  background-size: cover;
+  color:black;
+
+
+}
+
+
+/* tablet */
+@media(max-width: 780px){
+
+}
