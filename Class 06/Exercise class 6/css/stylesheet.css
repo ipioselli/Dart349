@@ -65,7 +65,8 @@ body{
 
 /* first grid */
 .grid{
-
+  justify-content: center;
+  /* align-items: center; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -122,7 +123,8 @@ body{
 
 .main{
   flex:55%;
-  height:80vh;
+  height: auto;
+  min-height:80vh;
   background: url(../assets/images/earrings.jpg)no-repeat center center;
   background-size: cover;
   background-color: #e3a896;
@@ -131,7 +133,6 @@ body{
 
 .middle{
   background-color:#f0d9c2;
-
   padding:90px;
   color:white;
   font-size: 20px;
@@ -155,7 +156,8 @@ body{
 
 
 .bottom{
-
+  justify-content: center;
+  /* align-items: center; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -203,7 +205,8 @@ body{
 
 .main02{
   flex:45%;
-  height:60vh;
+  height: auto;
+  min-height:60vh;
   background: url(../assets/images/rings.jpg)no-repeat center center;
   background-size: cover;
   background-color: #e3a896;
@@ -252,9 +255,7 @@ footer{
     flex-direction: column;
 }
 
-.grid{
-  height:20%;
-}
+
 
 .middle{
   font-size: 20px

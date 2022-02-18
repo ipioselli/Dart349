@@ -31,6 +31,7 @@ nav a:link {
   text-decoration: none;
   flex-grow: 1;
   text-align: center;
+  transition: all 0.3s;
 
 }
 
@@ -158,12 +159,15 @@ section.gallery div {
   transition: all .5s;
 }
 
-/* .gallery div:hover {
+.gallery div:hover {
   box-shadow: 5px 10px 30px rgba(0,0,0, .7);
   background: rgba(166, 191, 75, 1);
-  transform: scale(1.3);
-  transform: translateY(-50px);
-} */
+  /* transform: scale(1.3);
+  transform: translateY(-50px); */
+  transform: translateY(-10px) rotate(-5deg) scale(1.3);
+}
+
+
 
 .gallery div p {
   /* font-size: 16px; */
