@@ -85,6 +85,10 @@ body {
 /* tablet */
 @media (max-width: 780px) {
 
+  .side{
+    min-height: 
+  }
+
 }
 
 

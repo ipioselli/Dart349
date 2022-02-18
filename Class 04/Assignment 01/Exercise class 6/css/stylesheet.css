@@ -1,0 +1,268 @@
+/* DESKTOP FIRST */
+
+*{
+  box-sizing: border-box;
+}
+
+/* style the body */
+body{
+  font-family: sans-serif;
+  margin: 0;
+}
+
+/* info before header */
+.top{
+  padding: 5px;
+  text-align: center;
+  background: #e6b1aa;
+  color: white;
+  border-bottom: #544e4d solid;
+  border-bottom-width: thin;
+
+}
+
+/* header info */
+.header{
+  padding: 50px;
+  text-align: center;
+  background:#e8d6d3;
+  color: #544e4d;
+  border-bottom: #544e4d solid;
+  border-bottom-width: thin;
+
+}
+
+.header h1{
+  font-size: 40px;
+}
+
+.header h2{
+  font-size: 15px;
+}
+
+/* style navigation bar */
+.navbar{
+  display: flex;
+  background-color: #b8a19e;
+  border-bottom: #544e4d solid;
+  border-bottom-width: thin;
+}
+
+/* style links in nav bar */
+.navbar a{
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  flex: 1;
+}
+
+.navbar a:hover{
+  background-color: #6e5958;
+  color: black;
+}
+
+
+/* first grid */
+.grid{
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+
+}
+
+
+.side{
+
+  text-align: center;
+  position: relative;
+  flex:45%;
+  background-color: #e3a896;
+  color:black;
+  padding: 10px;
+
+}
+
+
+
+.side a{
+  background-color: white;
+  padding:20px;
+  text-decoration: none;
+  color:black;
+  font-style: italic;
+
+
+}
+
+.side a:hover{
+  background-color: #f0c7b9;
+
+}
+
+.side h3{
+  color:white;
+
+  font-size: 80px;
+  text-transform: capitalize;
+}
+
+.side p{
+  margin-bottom: 50px;
+  color: white;
+  font-size: 20px;
+}
+.side figure{
+  padding-bottom:20px;
+}
+
+
+
+.main{
+  flex:55%;
+  height:80vh;
+  background: url(../assets/images/earrings.jpg)no-repeat center center;
+  background-size: cover;
+  background-color: #e3a896;
+  color:black;
+}
+
+.middle{
+  background-color:#f0d9c2;
+
+  padding:90px;
+  color:white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.middle h4{
+  margin-bottom: 50px;
+}
+.middle a{
+  background-color: white;
+  padding:20px;
+  text-decoration: none;
+  color:black;
+  font-style: italic;
+}
+
+.middle a:hover{
+  background-color: #f0c7b9;
+}
+
+
+.bottom{
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+}
+
+
+.side02{
+  width:100%;
+  text-align: center;
+  position:relative;
+  flex:55%;
+  background-color: #e3a896;
+  color:black;
+  padding: 30px;
+
+}
+
+.side02 a{
+  background-color: white;
+  padding:20px;
+  text-decoration: none;
+  color:black;
+  font-style: italic;
+
+}
+
+.side02 a:hover{
+  background-color: #f0c7b9;
+}
+
+.side02 h3{
+  text-align: center;
+  color:white;
+
+  font-size: 70px;
+  text-transform: capitalize;
+}
+
+.side02 p{
+  margin-bottom: 50px;
+  color: white;
+  font-size: 20px;
+}
+
+.main02{
+  flex:45%;
+  height:60vh;
+  background: url(../assets/images/rings.jpg)no-repeat center center;
+  background-size: cover;
+  background-color: #e3a896;
+  color:black;
+
+}
+
+.side02 figure{
+  padding-bottom:20px;
+}
+
+
+/* footer info */
+footer{
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  background:#e8d6d3;
+  color: #544e4d;
+  border-top:#544e4d solid;
+  border-top-width: thin;
+  text-transform: capitalize;
+
+}
+
+
+/* tablet */
+@media(max-width: 780px){
+  .main{
+    background-position: center;
+    background-size: contain;
+      background-color: #e3a896;
+  }
+
+  .main02{
+    background-position: center;
+    background-size: contain;
+      background-color: #e3a896;
+  }
+
+}
+
+@media (max-width: 600px){
+  .row, .navbar{
+    flex-direction: column;
+}
+
+.grid{
+  height:20%;
+}
+
+.middle{
+  font-size: 20px
+}
+
+.main{order:2;}
+.side{order:1;}
+.side02{order:3;}
+.main02{order:4;}
+
+}
