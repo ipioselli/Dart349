@@ -62,17 +62,16 @@ body{
   color: black;
 }
 
+
+/* first grid */
 .grid{
 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   font-family: sans-serif;
-  height:80vh;
+
 }
-
-
-
 
 
 .side{
@@ -119,6 +118,42 @@ body{
   padding-bottom:20px;
 }
 
+
+
+.main{
+  flex:55%;
+  height:80vh;
+  background: url(../assets/images/earrings.jpg)no-repeat center center;
+  background-size: cover;
+  background-color: #e3a896;
+  color:black;
+}
+
+.middle{
+  background-color:#f0d9c2;
+
+  padding:90px;
+  color:white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.middle h4{
+  margin-bottom: 50px;
+}
+.middle a{
+  background-color: white;
+  padding:20px;
+  text-decoration: none;
+  color:black;
+  font-style: italic;
+}
+
+.middle a:hover{
+  background-color: #f0c7b9;
+}
+
+
 .bottom{
 
   display: flex;
@@ -126,6 +161,7 @@ body{
   flex-wrap: wrap;
   font-family: sans-serif;
 }
+
 
 .side02{
   width:100%;
@@ -175,39 +211,12 @@ body{
 
 }
 
-.main{
-  flex:55%;
-  height:80vh;
-  background: url(../assets/images/earrings.jpg)no-repeat center center;
-  background-size: cover;
-  background-color: #e3a896;
-  color:black;
+.side02 figure{
+  padding-bottom:20px;
 }
 
-.middle{
-  background-color:#f0d9c2;
 
-  padding:90px;
-  color:white;
-  font-size: 20px;
-  text-align: center;
-}
-
-.middle h4{
-  margin-bottom: 50px;
-}
-.middle a{
-  background-color: white;
-  padding:20px;
-  text-decoration: none;
-  color:black;
-  font-style: italic;
-}
-
-.middle a:hover{
-  background-color: #d6d3ed;
-}
-
+/* footer info */
 footer{
   font-family: sans-serif;
   font-size: 20px;
@@ -242,6 +251,7 @@ footer{
   .row, .navbar{
     flex-direction: column;
 }
+
 .grid{
   height:20%;
 }
