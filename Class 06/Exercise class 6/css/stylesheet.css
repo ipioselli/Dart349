@@ -82,7 +82,7 @@ body{
   flex:45%;
   background-color: #e3a896;
   color:black;
-  padding: 10px;
+  padding: 40px;
 
 }
 
@@ -172,7 +172,7 @@ body{
   flex:55%;
   background-color: #e3a896;
   color:black;
-  padding: 30px;
+  padding: 40px;
 
 }
 
@@ -250,6 +250,7 @@ footer{
 
 }
 
+/* less than 700px wide */
 @media (max-width: 600px){
   .row, .navbar{
     flex-direction: column;
