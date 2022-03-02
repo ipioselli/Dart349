@@ -1,0 +1,56 @@
+/* CSS RESET*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+}
+
+header h1 {
+  letter-spacing: 5px;
+  font-family: serif, georgia, ;
+  text-align: center;
+  color: #e39d5d;
+  padding: 20px;
+  font-size: 20px;
+  background: #f7ddc8
+}
+
+header h2 {
+  letter-spacing: 5px;
+  font-family: serif, georgia, ;
+  text-align: center;
+  color: #e39d5d;
+  font-size: 40;
+  padding: 50px;
+  border: 2px solid #e39d5d;
+}
+
+nav {
+  background: white;
+  border-bottom: 2px solid #e39d5d;
+  display: flex;
+}
+
+nav a:visited {
+  color: #e39d5d;
+}
+
+nav a:link{
+  color: #e39d5d;
+  /*dark purple*/
+  background: white;
+  padding: 20px 20px;
+  text-decoration: none;
+  flex-grow: 1;
+  text-align: center;
+}
+
+nav a:hover {
+  color: #e39d5d;
+  background: #fff;
+}
