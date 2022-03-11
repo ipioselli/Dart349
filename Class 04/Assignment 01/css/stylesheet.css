@@ -180,7 +180,16 @@ section.assignmentsFlex {
 /**Class midterm**/
 section.midterm {
   padding: 50px;
-  height: 60vh;
+  height: 40vh;
+}
+.midterm a:link{
+  font-size: 60px;
+  text-decoration: none;
+  color: #7e799c;
+}
+
+.midterm a:hover{
+  color: black;
 }
 
 /*FOOTER PROPERTIES*/
