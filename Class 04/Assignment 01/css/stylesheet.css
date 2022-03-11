@@ -7,11 +7,12 @@
 
 body {
   font-size: 20px;
+  font-family: 'Quicksand' ;
 }
 
 header h1 {
   letter-spacing: 5px;
-  font-family: serif, georgia, ;
+
   text-align: center;
   color: #7e799c;
   padding: 20px;
@@ -21,7 +22,7 @@ header h1 {
 
 header h2 {
   letter-spacing: 5px;
-  font-family: serif, georgia, ;
+  font-family: serif, georgia;
   text-align: center;
   color: #7e799c;
   font-size: 40;
