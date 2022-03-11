@@ -149,25 +149,28 @@ nav a {
 section.midtermFlex {
   width: 100%;
   height: auto;
-  min-height: 80vh;
+  min-height: 100vh;
+  padding: 50px;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
+  flex-flow: row;
+  justify-content: center;
   align-items: center;
   background: url(../images/image_03.png) no-repeat center center;
   background-size: cover;
 }
 
 .midtermFlex a {
+  text-decoration: none;
   font-size: 40px;
   color: white;
 }
 
 div.box {
   background-color: black;
+  margin-top: 50px;
   border-radius: 20px;
-  width: 500px;
-  height: 600px;
+  width: 350px;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -181,6 +184,7 @@ div.box {
 }
 
 .inside h2 {
+  text-align: center;
   padding: 40px;
 }
 
@@ -349,7 +353,9 @@ footer {
   section.midtermFlex {
     height: auto;
     min-height: 100vh;
+    flex-flow: row wrap;
   }
+
 
   section.styleguide {
     height: auto;
@@ -361,11 +367,16 @@ footer {
       flex-direction: column;
     }
 
+    section.midtermFlex {
+      height: auto;
+      min-height: 100vh;
+      flex-flow: row wrap;
+      order:1;
+    }
+
     .footer {
       order: 2;
     }
 
-    .midtermFlex {
-      order: 1;
-    }
+    
   }
