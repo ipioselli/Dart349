@@ -1,60 +1,59 @@
 /* CSS RESET*/
+@font-face {
+  font-family: NeutralFace;
+  src: url(fonts/NeutralFace.otf);
+
+  font-family: Elanor;
+  src: url(fonts/Elanor.otf);
+
+  font-family: Inter;
+  src: url(fonts/Inter-Light.otf);
+}
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+
 }
 
 body {
   font-size: 20px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: Inter, NeutralFace;
+  background-color: #f7f2e9;
 }
 
 header h1 {
+  font-family: Inter;
   letter-spacing: 5px;
-  /* font-family: helvetica, serif, georgia, ; */
   text-align: center;
-  color: #e39d5d;
+  /* color: #fcb89f; */
   padding: 20px;
   font-size: 20px;
-  background: #f7ddc8
+  background: #f7ded5;
 }
 
 header h2 {
   letter-spacing: 5px;
-  font-family: sans-serif, helvetica, serif, georgia, ;
+  font-family: Inter;
   text-align: center;
-  color: #e39d5d;
+  /* color: #d8b0f7; */
   font-size:50;
   padding: 50px;
-  border-bottom:  : 2px solid #e39d5d;
+  transform: translateY(-500px);
+  transition: 250ms linear;
+  opacity: 1;
+  animation: slider 1s 1s forwards cubic-bezier(.56,-0.61,.46,1.57);
+
 }
 
-/* nav.transition {
-  background: white;
-  border-bottom: 2px solid #e39d5d;
-  display: flex;
+@keyframes slider {
+  from {transform: translateY(500) rotate(-3deg); opacity:0; }
+	to {transform: translateY(0) rotate(0deg); opacity:1;}
 }
 
-nav a:visited {
-  color: #e39d5d;
-}
 
-nav a:link{
-  color: #e39d5d;
-
-  background: white;
-  padding: 20px 20px;
-  text-decoration: none;
-  flex-grow: 1;
-  text-align: center;
-}
-
-nav a:hover {
-  color: #e39d5d;
-  background: #fff;
-} */
 *,
 *:after,
 *::before {
@@ -65,15 +64,18 @@ nav a:hover {
 
 /* Effect 21: borders slight translate */
 .color {
+
   text-align: center;
-  border-bottom: 2px solid #e39d5d;
-
-
-
+  border-bottom: 3px solid black;
 }
+
+nav.transition{
+  margin-bottom: 40px;
+}
+
 nav a{
-  padding: 10px;
-  color: #237546;
+  padding: 20px;
+  color: black;
   font-weight: 700;
   text-shadow: none;
   -webkit-transition: color 0.3s;
@@ -85,7 +87,7 @@ nav a{
 	display: inline-block;
 	margin: 15px 25px;
 	outline: none;
-	color: pink;
+	color: black;
 	text-decoration: none;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -102,6 +104,7 @@ nav a{
 .transition a:hover,
 .transition a:focus {
 	outline: none;
+
 }
 
 .transition a::before,
@@ -110,7 +113,7 @@ nav a{
 	left: 0;
 	width: 100%;
 	height: 2px;
-	background: pink;
+	background: black;
 	content: '';
 	opacity: 0;
 	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
@@ -137,7 +140,7 @@ nav a{
 
 .transition a:hover,
 .transition a:focus {
-	color: pink;
+	color: black;
 }
 
 .transition a:hover::before,
@@ -152,31 +155,244 @@ nav a{
 
 section.midtermFlex{
   width: 100%;
-  height: 80vh;
+  height: auto;
+  min-height: 80vh;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center;
-  background-color: pink;
+  background: url(../images/image_03.png) no-repeat center center;
+  background-size: cover;
+
+}
+.midtermFlex a {
+  font-size: 40px;
+  color: white;
 }
 
-.midtermFlex div{
-  background: url(../images/image_01.png) no-repeat center center;
+div.box {
+  /* background: url(../images/image_01.png) no-repeat center center;
+  background-size: cover; */
+  background-color: black;
   border-radius: 20px;
-  width: 400px;
-  height: 500px;
+  width: 500px;
+  height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.5s;
+  box-shadow:0 5px 10px 0px grey;
+
+}
+.box:hover {
+   transform: scale(1.1) translateY(-80px) ;
+   box-shadow:0 8px 20px 0px white;
+}
+
+.inside h2{
+  padding: 40px;
+}
+
+
+
+
+section.proposal{
+  width: 100%;
+  height: auto;
+  min-height: 80vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background: url(../images/image_03.png) no-repeat center center;
+  background-size: cover;
+
+
+
+}
+
+
+
+.proposal h2 {
+  text-align: left;
+  font-size: 100px;
+  color: #9e8de3;
+  transition: all 0.5s;
+
+}
+
+.proposal h2:hover {
+  transform: scale(1.1) translateY(-50px) ;
+  background-color: #dfdaf5;
+  border-radius: 20px;
+  padding: 20px;
+
+}
+.proposal p{
+  font-family: Inter, serif;
+  text-align: center;
+  font-size: 40px;
+}
+.proposal a{
+  transition: all 0.5s;
+}
+
+.proposal a:link{
+  text-decoration: none;
+  transition: all 0.5s;
+
+}
+
+.proposal a:hover{
+  color: white;
+
+}
+
+
+section.styleguide{
+  font-family: Inter;
+  width: 100%;
+  height: auto;
+  min-height: 80vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 100px;
+  background: url(../images/image_03.png) no-repeat center center;
+  background-size: cover;
+
+}
+
+.styleguide img{
+  padding: 70px;
+  transition: all 0.5s;
+}
+
+.styleguide img:hover{
+  transform: scale(1.1) ;
+}
+
+.styleguide h2 {
+  text-align: left;
+  font-size: 100px;
+  color: #9e8de3;
+  transition: all 0.5s;
+
+}
+
+.styleguide h2:hover {
+  transform: scale(1.1) translateY(-50px) ;
+  background-color: #dfdaf5;
+  border-radius: 20px;
+  padding: 20px;
+
+}
+
+.styleguide h3{
+  font-family: Inter;
+}
+
+.styleguide p{
+  font-size: 30px;
+  font-family: Inter;
+}
+
+p.font1 {
+  font-size: 20px;
+  font-family: Inter, serif;
+}
+
+.styleguide h3{
+  font-size: 40px;
+}
+
+ul{
+    padding: 25px;
+}
+li{
+  font-size:30px;
+
+}
+
+
+.styleguide a{
+  text-decoration: none;
+  color: black;
+}
+
+.styleguide a:hover{
+  color: white;
+}
+
+.wireframe h3{
+  padding:20px;
+  font-size: 50px;
+
+}
+
+.wireframe h3:hover{
+  color:white;
+}
+section.wireframe{
+
+  align-items: center;
+  margin: 50px;
+  text-align: center;
+
+}
+.prototype h3{
+  padding:20px;
+  font-size: 50px;
+}
+
+.prototype h3:hover{
+  color:white;
+}
+section.prototype{
+  margin: 50px;
+  text-align: center;
+}
+
+
+section.inside {
+  text-align: center;
+  height:auto;
+  min-height: 700px;
+  padding: 40px;
+  margin:20px;
 }
 
 footer {
-  height: 100px;
+  text-align: center;
+  border-top: 3px solid black;
+  padding:20px;
+  background: #f7ded5;
 }
 
-section.inside {
-  max-width: 500px;
-  height: 700px;
-  padding: 40px;
-  background-color: red;
+@media(max-width: 780px){
+
+section.midtermFlex{
+  height: auto;
+  min-height: 100vh;
+}
+section.styleguide{
+  height: auto;
+  min-height: 100vh;
+}
+
+
+
+@media (max-width: 600px){
+  .row, .nav{
+    flex-direction: column;
+}
+
+
+
+
+.footer{order:2;}
+.midtermFlex{order:1;}
+
+
 }
