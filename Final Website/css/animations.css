@@ -10,15 +10,26 @@
 	transform: translateX(0);
 }
 
+.slide-up {
+	opacity: 0;
+	transform: translateY(3em);
+	transition: all 0.7s 1s ease-out;
+/*	will-change: all;*/
+}
+.slide-up.is-visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
 
 .bar-left{
   display: block;
   background: url("../images/bar1.svg") repeat-x;
-  margin-top: 50px;
+  margin-top:30px;
   height: 50px;
   width: 4000px;
   opacity:0;
-  transition: all .5s;
+  transition: all 5s;
 }
 
 .bar-left.is-visible {
