@@ -1,5 +1,4 @@
 /* CSS RESET*/
-
 @font-face {
   font-family: NeutralFace;
   src: url(fonts/NeutralFace.otf);
@@ -14,6 +13,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+img {width:100%;}
 
 body {
   font-size: 20px;
@@ -349,34 +350,39 @@ footer {
   background: #f7ded5;
 }
 
-@media(max-width: 780px) {
+@media screen and (max-width: 992px) {
+  /* body {
+    background: red;
+  } */
+
   section.midtermFlex {
     height: auto;
     min-height: 100vh;
     flex-flow: row wrap;
   }
 
-
   section.styleguide {
     height: auto;
     min-height: 100vh;
   }
+}
 
-  @media (max-width: 600px) {
-    .row, .nav {
-      flex-direction: column;
-    }
-
-    section.midtermFlex {
-      height: auto;
-      min-height: 100vh;
-      flex-flow: row wrap;
-      order:1;
-    }
-
-    .footer {
-      order: 2;
-    }
-
-    
+@media screen and (max-width: 600px) {
+  body {
+    background: red;
   }
+  .row, .nav {
+    flex-direction: column;
+  }
+
+  section.midtermFlex {
+    height: auto;
+    min-height: 100vh;
+    flex-flow: row wrap;
+    order: 1;
+  }
+
+  .footer {
+    order: 2;
+  }
+}
