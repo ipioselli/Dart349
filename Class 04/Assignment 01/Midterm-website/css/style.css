@@ -233,10 +233,14 @@ section.proposal {
 .proposal a:hover {
   color: white;
 }
-
+section.background{
+  background: url(../images/image_03.png) no-repeat center center;
+  background-size: cover;
+}
 section.styleguide {
+  margin: auto;
   font-family: Inter;
-  width: 100%;
+  width: 50vw;
   height: auto;
   min-height: 80vh;
   display: flex;

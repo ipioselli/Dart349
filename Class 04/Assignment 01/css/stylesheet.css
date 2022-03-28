@@ -135,7 +135,7 @@ section.aboutme article h4 {
 }
 
 .assignments h4 {
-  letter-spacing: 10px;
+  letter-spacing: 5px;
 }
 
 section.assignmentsFlex {
@@ -149,8 +149,8 @@ section.assignmentsFlex {
 
 .assignmentsFlex div {
   border-radius: 10px;
-  width: 300px;
-  height: 400px;
+  width: 400px;
+  height: 500px;
   background: #cad0de;
   font-size: 50px;
   display: flex;
