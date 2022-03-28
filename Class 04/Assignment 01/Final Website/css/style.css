@@ -73,8 +73,8 @@ section.coupons {
   height: 10vh;
   background: url(../images/coupon-bg.png);
   background-size: cover;
-  bottom: 0;
   left: 0;
+  bottom: 0;
 }
 
 .container {
@@ -83,6 +83,7 @@ section.coupons {
 }
 
 section.new {
+  margin-bottom: 5px;
   width: 100%;
   height: 50vh;
   padding-top: 200px;
@@ -94,15 +95,15 @@ section.new {
   background-size: cover;
 }
 
-section.discount{
+section.discount {
+
   align-items: center;
-    justify-content: center;
-  margin-bottom: 20px;
+  justify-content: center;
   width: 100%;
   height: 50vh;
-  background: url(../images/discount.png) no-repeat center center;;
+  background: url(../images/discount.png) no-repeat center center;
+  ;
   /* background-size: cover; */
-
 }
 
 .shop-now a {
@@ -115,7 +116,8 @@ section.discount{
   transition: all 0.5s;
   box-shadow: 0 5px 10px 0px grey;
 }
-.shop-now a:hover{
+
+.shop-now a:hover {
   box-shadow: 0 8px 20px 0px white;
 }
 
