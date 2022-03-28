@@ -1,0 +1,36 @@
+.slide-left {
+	opacity: 0;
+	transform: translateX(2em);
+	transition: all .5s .35s ease-out;
+	will-change: all;
+}
+
+.slide-left.is-visible {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+
+.bar-left{
+  display: block;
+  background: url("../images/bar1.svg") repeat-x;
+  margin-top: 50px;
+  height: 50px;
+  width: 4000px;
+  opacity:0;
+  transition: all .5s;
+}
+
+.bar-left.is-visible {
+  opacity: 1;
+  animation:slide-left 30s linear infinite;
+}
+
+@keyframes slide-left{
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-2000px, 0, 0);
+  }
+}
