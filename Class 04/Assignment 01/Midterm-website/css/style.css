@@ -240,7 +240,7 @@ section.background{
 section.styleguide {
   margin: auto;
   font-family: Inter;
-  width: 50vw;
+  width: 70vw;
   height: auto;
   min-height: 80vh;
   display: flex;
@@ -262,7 +262,7 @@ section.styleguide {
 }
 
 .styleguide h2 {
-  text-align: left;
+  text-align: center;
   font-size: 100px;
   color: #9e8de3;
   transition: all 0.5s;

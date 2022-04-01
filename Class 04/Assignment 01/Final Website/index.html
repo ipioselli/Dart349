@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,11 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animations.css">
 </head>
+
 <body>
 
 
-
+  <!-- top right nav bar -->
   <header>
     <nav class="navbar">
       <a href="index.html">Sign In</a>
@@ -20,13 +22,14 @@
     </nav>
   </header>
 
+  <!-- logo -->
   <div class="header">
     <div class="slide-up show-on-scroll">
-        <a href=""><img src="./images/globe.svg" alt=""></a>
+      <a href="index.html"><img src="./images/globe.svg" alt=""></a>
     </div>
-
   </div>
 
+  <!-- main nav bar -->
   <nav class="main-nav">
     <a href="">Women</a>
     <a href="">Men</a>
@@ -35,7 +38,9 @@
     <a href="">Contact</a>
   </nav>
 
+  <!-- main container -->
   <section class="home-container">
+
 
     <section class="coupons container">
       <figure class="bar-left show-on-scroll"></figure>
@@ -51,13 +56,44 @@
 
     </section>
 
+
+
+    <div class="slideshow-container">
+
+      <div class="mySlides">
+        <img src="./images/pants.jpeg" alt="">
+        <div class="text">Caption</div>
+
+      </div>
+
+      <div class="mySlides">
+        <img src="./images/bag.jpeg" alt="">
+        <div class="text">Caption</div>
+
+
+      </div>
+      <a class="prev" onClick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onClick="plusSlides(1)">&#10095;</a>
+
+
+    </div>
+
+    <section class="membership">
+      <h1>Become a Style City Member & get 10% off your first purchase + rewards just for shopping</h1>
+      <h2>Use the code NEWMEMBER22</h2>
+    </section>
+
+
   </section>
   <footer>
     This is a foooter
   </footer>
 
-	<script src="js/show-on-scroll.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/show-on-scroll.js"></script>
+
 
 
 </body>
+
 </html>
