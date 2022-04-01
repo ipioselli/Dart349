@@ -125,11 +125,7 @@ section.coupons {
 }
 
 section.new {
-<<<<<<< HEAD
   margin-bottom: 20px;
-=======
-  margin-bottom: 5px;
->>>>>>> 8bedcc129f8fb54b6e616f492cdfa16f0b96bdf7
   width: 100%;
   height: 50vh;
   padding-top: 200px;
@@ -141,23 +137,23 @@ section.new {
   background-size: cover;
 }
 
-<<<<<<< HEAD
-section.discount{
-    margin-bottom: 20px;
-=======
+
+
+
 section.discount {
 
->>>>>>> 8bedcc129f8fb54b6e616f492cdfa16f0b96bdf7
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 50vh;
+    margin-bottom: 20px;
   background: url(../images/discount.png) no-repeat center center;
   ;
   /* background-size: cover; */
 }
 
 .shop-now a {
+
   color: black;
   background-color: white;
   border-radius: 30px;
@@ -176,6 +172,7 @@ section.discount {
 
   /* background-color: red; */
   margin:auto;
+    margin-bottom: 20px;
   width:100%;
   position:relative;
 
@@ -219,19 +216,20 @@ section.discount {
 }
 
 section.membership{
+
   display: flex row;
   width:100%;
   align-items: center;
   justify-content: center;
   text-align: center;
-  /* height:20vh; */
+
   background-color: #f7ded5;
   padding: 20px;
 
 }
 
 .membership h1{
-  color: red;
+  color: black;
   font-size: 25px;
   margin-bottom: 10px;
 }
@@ -247,4 +245,19 @@ footer {
   padding: 50px;
   width: 100%;
   background-color: #f7ded5;
+  display: flex column;
+}
+
+.shop-footer{
+  margin-left: 100px;
+}
+
+.shop-footer h1{
+  padding: 10px;
+  font-size: 20px;
+}
+
+.shop-footer h2{
+  padding: 10px;
+  font-size: 15px;
 }
