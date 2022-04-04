@@ -1,0 +1,64 @@
+section.about-us{
+  width:100%;
+  padding:50px;
+  /* height:20vh; */
+  text-align: center;
+  background-color: red;
+  margin-bottom:20px;
+}
+
+
+.top-grid{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+
+}
+
+.left{
+  text-align: center;
+  position: relative;
+  flex:50%;
+  background-color: pink;
+  color: black;
+  padding:10px;
+}
+
+.main{
+  flex: 50%;
+  height:50vh;
+  background: url(../images/bag.jpeg)no-repeat center center;
+  background-size: cover;
+  background-color: blue;
+
+}
+
+.about-us h2{
+  font-size: 40px;
+}
+
+.top-grid h3{
+  font-size: 30px;
+}
+
+.middle-grid{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main-02{
+  background-color:blue;
+  flex:50%;
+  height:50vh;
+}
+
+.right{
+  text-align: center;
+  position: relative;
+  flex:50%;
+  background-color: pink;
+  color: black;
+  padding:10px;
+}

@@ -112,7 +112,7 @@ section.coupons {
   width: 100%;
   z-index: 0;
   overflow: hidden;
-  height: 10vh;
+  padding:30px;
   background: url(../images/coupon-bg.png);
   background-size: cover;
   left: 0;
@@ -168,18 +168,8 @@ section.discount {
   box-shadow: 0 8px 20px 0px white;
 }
 
-.slideshow-container{
-
-  /* background-color: red; */
-  margin:auto;
-    margin-bottom: 20px;
-  width:100%;
-  position:relative;
-
-
-}
 .mySlides img{
-  width: 100%;
+  width: 40vw;
   /* border-radius: 250px; */
   height:50vh;
 }
@@ -225,6 +215,7 @@ section.membership{
 
   background-color: #f7ded5;
   padding: 20px;
+  margin-bottom: 20px;
 
 }
 
@@ -238,18 +229,48 @@ section.membership{
   font-size: 20px;
 }
 
+section.influencer{
+  margin: auto;
+  width:100%;
+  height:30vh;
+  background-color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.influencer a {
+
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  padding: 30px 50px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 0.5s;
+  box-shadow: 0 5px 10px 0px grey;
+}
+
+.shop-now a:hover {
+  box-shadow: 0 8px 20px 0px white;
+}
+
+
 
 
 footer {
+  justify-content: space-around;
   margin: auto;
   padding: 50px;
   width: 100%;
   background-color: #f7ded5;
-  display: flex column;
+  display: flex;
+
 }
 
 .shop-footer{
-  margin-left: 100px;
+  /* margin-left: 100px; */
 }
 
 .shop-footer h1{
@@ -260,4 +281,9 @@ footer {
 .shop-footer h2{
   padding: 10px;
   font-size: 15px;
+}
+
+footer.bottom{
+  height: 15vh;
+  background-color: pink;
 }
