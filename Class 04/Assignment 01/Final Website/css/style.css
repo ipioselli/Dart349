@@ -127,14 +127,15 @@ section.coupons {
 section.new {
   margin-bottom: 20px;
   width: 100%;
-  height: 50vh;
-  padding-top: 200px;
+  height: 60vh;
+  /* padding: 300px; */
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(../images/shop-now.png);
-  background-size: cover;
+  background: url(../images/SHOP.png) no-repeat center center;
+  background-size: contain;
+  background-color: red;
 }
 
 
@@ -145,11 +146,18 @@ section.discount {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 50vh;
-    margin-bottom: 20px;
-  background: url(../images/discount.png) no-repeat center center;
-  ;
-  /* background-size: cover; */
+  /* padding: 200px; */
+  height: 38vh;
+  margin-bottom: 20px;
+  background-position: center;
+  background-size: cover;
+  /* background-color: red; */
+
+}
+
+.discount img{
+  display: block;
+  width: 100%;
 }
 
 .shop-now a {
