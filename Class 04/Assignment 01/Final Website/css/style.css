@@ -124,19 +124,21 @@ section.coupons {
   bottom: 180px;
 }
 
-section.new {
+div.new {
   margin-bottom: 20px;
   width: 100%;
-  height: 60vh;
-  /* padding: 300px; */
+  height: 100%;
+  /* height: 50vh; */
+  padding: 50px;
   text-align: center;
-  display: flex;
-  justify-content: center;
+  display: flex column;
+  justify-content: space-between;
   align-items: center;
-  background: url(../images/SHOP.png) no-repeat center center;
-  background-size: contain;
-  background-color: red;
+  background: url(../images/shop-now.png) no-repeat center center;
+  background-size: cover;
+
 }
+
 
 
 
@@ -146,12 +148,9 @@ section.discount {
   align-items: center;
   justify-content: center;
   width: 100%;
-  /* padding: 200px; */
-  height: 38vh;
   margin-bottom: 20px;
   background-position: center;
   background-size: cover;
-  /* background-color: red; */
 
 }
 
@@ -160,14 +159,26 @@ section.discount {
   width: 100%;
 }
 
+.shop-now h1{
+  font-size: 40px;
+  padding: 10px;
+}
+
+.shop-now h2{
+  font-size: 30px;
+  padding: 10px;
+}
+
+
 .shop-now a {
 
   color: black;
   background-color: white;
   border-radius: 30px;
-  padding: 30px 50px;
+  padding: 10px;
+  /* padding: 30px 50px; */
   text-decoration: none;
-  font-size: 30px;
+  font-size: 20px;
   transition: all 0.5s;
   box-shadow: 0 5px 10px 0px grey;
 }
@@ -240,20 +251,37 @@ section.membership{
 section.influencer{
   margin: auto;
   width:100%;
-  height:30vh;
+  /* height:50vh; */
   background-color: black;
-  text-align: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+
 }
 
-.influencer a {
+.influencer-left{
+text-align: center;
+position: relative;
+flex:50%;
+background: url(../images/SHOP.png) no-repeat center center;
+background-size: cover;
+
+}
+
+
+.influencer-main{
+  flex: 50%;
+  height: 50vh;
+}
+
+
+.influencer-main a {
 
   color: black;
   background-color: white;
   border-radius: 30px;
-  padding: 30px 50px;
+  /* padding: 30px 50px; */
   text-decoration: none;
   font-size: 20px;
   transition: all 0.5s;
