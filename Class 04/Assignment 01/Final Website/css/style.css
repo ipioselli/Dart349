@@ -248,11 +248,12 @@ section.membership{
   font-size: 20px;
 }
 
-section.influencer{
+.influencer{
   margin: auto;
   width:100%;
   /* height:50vh; */
-  background-color: black;
+  background-color:#aa9fd1;
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -264,20 +265,26 @@ section.influencer{
 text-align: center;
 position: relative;
 flex:50%;
-background: url(../images/SHOP.png) no-repeat center center;
+height:50vh;
+background: url(../images/influencer.png) no-repeat center center;
 background-size: cover;
 
 }
 
 
 .influencer-main{
+  position: relative;
+  text-align: center;
   flex: 50%;
-  height: 50vh;
+  padding: 40px;
+  position: relative;
+
+
 }
 
 
 .influencer-main a {
-
+  padding: 20px;
   color: black;
   background-color: white;
   border-radius: 30px;
@@ -285,12 +292,17 @@ background-size: cover;
   text-decoration: none;
   font-size: 20px;
   transition: all 0.5s;
-  box-shadow: 0 5px 10px 0px grey;
+  box-shadow: 0 5px 10px 0px white;
+
 }
 
-.shop-now a:hover {
-  box-shadow: 0 8px 20px 0px white;
+.influencer-main a:hover {
+    box-shadow: 0 8px 20px 0px white;
 }
+.influencer-main figure{
+  padding:40px;
+}
+
 
 
 
@@ -300,7 +312,7 @@ footer {
   margin: auto;
   padding: 50px;
   width: 100%;
-  background-color: #f7ded5;
+  background-color: #fad9dd;
   display: flex;
 
 }
@@ -318,8 +330,13 @@ footer {
   padding: 10px;
   font-size: 15px;
 }
+.shop-footer h2:hover{
+  color: white;
+  cursor: pointer;
+}
 
 footer.bottom{
   height: 15vh;
-  background-color: pink;
+  background: url(../images/coupon-bg.png);
+  background-size: cover;
 }

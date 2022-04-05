@@ -1,10 +1,27 @@
 section.about-us{
   width:100%;
   padding:50px;
-  /* height:20vh; */
   text-align: center;
-  background-color: red;
+  background: url(../images/coupon-bg.png);
+  background-size: cover;
   margin-bottom:20px;
+}
+
+section.quote{
+  width: 100%;
+  text-align: center;
+}
+.quote h2{
+  font-size: 30px;
+  color: black;
+  opacity: 0;
+  transform: translateY(2em);
+  transition: all .5s .5s ease-out;
+}
+
+.quote.is-visible h2{
+opacity: 1;
+transform: translateY(0);
 }
 
 
@@ -20,45 +37,118 @@ section.about-us{
   text-align: center;
   position: relative;
   flex:50%;
-  background-color: pink;
+  background-color: #fad9dd;
   color: black;
-  padding:10px;
+  padding:30px;
+  height:50vh;
 }
 
 .main{
   flex: 50%;
-  height:50vh;
-  background: url(../images/bag.jpeg)no-repeat center center;
+
+  background: url(../images/rack.jpg)no-repeat center center;
   background-size: cover;
-  background-color: blue;
+
 
 }
 
 .about-us h2{
+  color: white;
   font-size: 40px;
+}
+.top-grid p{
+  font-size: 20px;
+  padding: 10px;
+  opacity: 0;
+  transform: translateX(-2em);
+  transition: all .5s .35s ease-out;
+  will-change: all;
+}
+
+.top-grid.is-visible p{
+opacity: 1;
+transform: translateX(0);
 }
 
 .top-grid h3{
   font-size: 30px;
+    opacity: 0;
+  transform: translateX(-2em);
+  transition: all .5s .35s ease-out;
+  will-change: all;
 }
 
+.top-grid.is-visible h3{
+opacity: 1;
+transform: translateX(0);
+}
+
+
+
 .middle-grid{
+  margin: auto;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-bottom: 50px;
+
+}
+
+.middle-grid h3{
+  font-size: 30px;
+  opacity: 0;
+transform: translateX(2em);
+transition: all .5s .35s ease-out;
+will-change: all;
+}
+
+.middle-grid.is-visible h3{
+opacity: 1;
+transform: translateX(0);
+}
+
+.middle-grid p{
+  font-size: 20px;
+  padding: 10px;
+  opacity: 0;
+transform: translateX(2em);
+transition: all .5s .35s ease-out;
+will-change: all;
+}
+
+.middle-grid.is-visible p{
+  opacity: 1;
+transform: translateX(0);
 }
 
 .main-02{
-  background-color:blue;
+  background: url(../images/rack-2.jpg);
+  background-size: cover;
   flex:50%;
-  height:50vh;
+
 }
 
 .right{
+
   text-align: center;
   position: relative;
   flex:50%;
-  background-color: pink;
+  background-color: #fad9dd;
   color: black;
-  padding:10px;
+  padding:30px;
+  height:50vh;
+}
+
+@media screen and (max-width: 992px) {
+
+  .about-us h2{
+    color: white;
+    font-size: 20px;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
 }

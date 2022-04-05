@@ -1,0 +1,81 @@
+section.contact-us {
+  width:100%;
+  display:flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.contact-us h2{
+  padding: 10px;
+  font-size: 40px;
+  text-transform: uppercase;
+  transition: all 0.5s;
+
+}
+
+.contact-us h2:hover{
+    padding: 10px;
+    cursor: pointer;
+    transform: scale(1.1) translateY(-10px);
+}
+
+section.meet-the-crew {
+  text-align: center;
+  width: 100%;
+  display:flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+
+}
+
+.title h2 {
+  padding: 20px;
+  font-size: 40px;
+  transition: all 0.5s;
+}
+
+.title h2:hover{
+  cursor: pointer;
+  transform: scale(1.1) translateY(-10px);
+}
+
+.picture img {
+  width: 100%;
+  /* padding: 100px; */
+}
+
+.text p {
+  font-size: 20px;
+  text-align: left;
+  margin-top: 20px;
+  opacity: 0;
+  transform: translateX(2em);
+  transition: all 0.5s .35s ease-out;
+  will-change: all;
+}
+
+.text.is-visible p{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media screen and (max-width: 992px) {
+
+.meet-the-crew h2{
+  font-size: 20px;
+}
+
+.contact-us h2{
+  font-size: 20px;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+
+}
