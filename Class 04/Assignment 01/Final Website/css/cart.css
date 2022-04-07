@@ -108,7 +108,7 @@ section.problem {
 .circle-01 {
   position: relative;
   display: block;
-  margin-right: 500px;
+  margin-right: 600px;
   color: black;
   text-align: center;
 }
@@ -116,18 +116,12 @@ section.problem {
 .circle-02 {
   position: relative;
   display: block;
-  margin-left: 500px;
+  margin-left: 600px;
   color: black;
   text-align: center;
 }
 
-.circle-03 {
-  position: relative;
-  display: block;
-  margin-right: 500px;
-  color: black;
-  text-align: center;
-}
+
 
 .circle-01:after {
   display: block;
