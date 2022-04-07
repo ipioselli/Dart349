@@ -1,0 +1,46 @@
+
+.women-container{
+  width:100%;
+  
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.clothing-module{
+  position: relative;
+  z-index: 1;
+  display: block;
+  background: black;
+  min-width: 200px;
+  max-width:200px;
+
+  height:500px;
+}
+
+.clothing-content{
+  color:white;
+}
+
+.clothing-module .thumbnail{
+  background:red;
+  height:400px;
+  overflow: hidden;
+}
+
+.clothing-module .thumbnail img{
+  display: block;
+  width:100%;
+
+}
+
+.clothing-module .thumbnail .heart{
+  color:white;
+  position: absolute;
+  bottom:20px;
+  left:20px;
+  z-index: 1;
+
+}

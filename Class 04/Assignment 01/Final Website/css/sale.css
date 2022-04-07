@@ -1,0 +1,106 @@
+/* sale page stylesheet */
+@font-face {
+  font-family: Inter;
+  src: url(fonts/Inter-Light.otf);
+  font-family: InterBold;
+  src: url(fonts/Inter-Bold.otf);
+}
+
+section.sale {
+  height: 50vh;
+  background-color: red;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url(/images/shop-now.png) no-repeat center center;
+  background-image: cover;
+  margin-bottom: 20px;
+}
+
+.sale {
+  padding: 50px;
+}
+
+.sale h1 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.sale h2 {
+  font-size: 50px;
+  font-family: InterBold;
+}
+
+#sale-button {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 0.5s;
+  border-radius: 30px;
+  box-shadow: 0 5px 10px 0px white;
+  background-color: white;
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+  padding: 20px;
+  width: 250px;
+}
+
+#sale-button:hover {
+  box-shadow: 0 8px 20px 0px white;
+}
+
+#secret-info {
+  background-color: #e6dcdc;
+  display: none;
+  margin: auto;
+}
+
+#secret-info p {
+  font-size: 20px;
+}
+
+.sale-info {
+  padding: 50px;
+}
+
+.sale-info h1 {
+  text-align: center;
+  padding: 10px;
+  color: grey;
+}
+
+.sale-info h2 {
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  font-family: InterBold;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.sale-info h2:hover {
+  cursor: pointer;
+  transform: scale(1.1) translateY(-10px);
+}
+
+.list li {
+  opacity: 0;
+  transform: translateX(-2em);
+  transition: all .5s .5s ease-out;
+  font-size: 20px;
+}
+
+.list.is-visible li {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+section.list {
+  padding: 50px;
+  border-top: 3px solid black;
+}
+
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 600px) {}
