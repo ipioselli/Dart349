@@ -1,8 +1,11 @@
+
+
+
 section.cart{
   display: flex;
   flex-direction:row;
   flex-wrap: wrap;
-  justify-content: center;
+background-color: red;
 
 
 
@@ -37,14 +40,52 @@ div.cart-right{
 background-color: #cccccc;
 margin: auto;
 flex: 25%;
+height:50vh;
 display: flex;
-flex-direction: row;
-/* justify-content:center;
-text-align: center; */
+flex-direction: column;
+justify-content:center;
+text-align: center;
 
 
 }
 
+div.details-right{
+
+  padding:30px;
+  border-top: 2px;
+  border-bottom: 2px;
+  border-color: black;
+  border-style: solid;
+
+  border-left: none;
+  border-right: none;
+}
+
+div.info-right{
+  display:flex;
+  flex-direction: column;
+}
+
+div.individual{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+div.total{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 2px solid black;
+}
+
+.total h2{
+
+}
+
+.individual h1{
+
+  margin-bottom: 20px;
+}
 div.clothes{
   border: 20px;
   display: flex;
@@ -52,6 +93,8 @@ div.clothes{
   flex-wrap: wrap;
 
 }
+
+
 
 div.info{
   padding: 20px;
@@ -89,15 +132,23 @@ div.details{
   padding:20px;
 }
 
+#secret-document {
+  display: none;
+  margin: auto;
+  width: 50vw;
+  font
+}
+
+#button {
+  margin: auto;
+  cursor: pointer;
+  padding: 20px;
+  width: 150px;
+}
+
 @media screen and (max-width: 992px) {
 
-.meet-the-crew h2{
-  font-size: 20px;
-}
 
-.contact-us h2{
-  font-size: 20px;
-}
 
 }
 

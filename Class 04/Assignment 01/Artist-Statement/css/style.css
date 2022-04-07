@@ -65,7 +65,7 @@ header h2 {
 
 .color {
   text-align: center;
-  border-bottom: 3px solid black;
+  border-bottom: 2px solid black;
 }
 
 nav.transition {
@@ -159,9 +159,7 @@ section.artist-statement {
   background: url(../images/image_03.png) no-repeat center center;
   background-size: cover;
 }
-section.container{
 
-}
 
 .artist-statement a {
   text-decoration: none;
@@ -201,10 +199,11 @@ div.box {
   padding: 40px;
 }
 
-section.proposal {
+section.final {
   width: 100%;
   height: auto;
-  min-height: 80vh;
+  min-height: 60vh;
+  padding: 30px;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-evenly;
@@ -213,96 +212,36 @@ section.proposal {
   background-size: cover;
 }
 
-.proposal h2 {
+.final h2 {
   text-align: left;
-  font-size: 100px;
-  color: #9e8de3;
+  font-size: 40px;
+  color: black;
   transition: all 0.5s;
 }
 
-.proposal h2:hover {
-  transform: scale(1.1) translateY(-50px);
-  background-color: #dfdaf5;
-  border-radius: 20px;
-  padding: 20px;
+.final h2:hover {
+  cursor: pointer;
+  transform: scale(1.1) translateY(-20px);
+
 }
 
-.proposal p {
+.final p {
   font-family: Inter, serif;
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
 }
 
-.proposal a {
+.final a {
   transition: all 0.5s;
 }
 
-.proposal a:link {
+.final a:link {
   text-decoration: none;
   transition: all 0.5s;
 }
 
-.proposal a:hover {
+.final a:hover {
   color: white;
-}
-section.background{
-  background: url(../images/image_03.png) no-repeat center center;
-  background-size: cover;
-}
-section.styleguide {
-  margin: auto;
-  font-family: Inter;
-  width: 70vw;
-  height: auto;
-  min-height: 80vh;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 100px;
-  background: url(../images/image_03.png) no-repeat center center;
-  background-size: cover;
-}
-
-.styleguide img {
-  padding: 70px;
-  transition: all 0.5s;
-}
-
-.styleguide img:hover {
-  transform: scale(1.1);
-}
-
-.styleguide h2 {
-  text-align: center;
-  font-size: 100px;
-  color: #9e8de3;
-  transition: all 0.5s;
-}
-
-.styleguide h2:hover {
-  transform: scale(1.1) translateY(-50px);
-  background-color: #dfdaf5;
-  border-radius: 20px;
-  padding: 20px;
-}
-
-.styleguide h3 {
-  font-family: Inter;
-}
-
-.styleguide p {
-  font-size: 30px;
-  font-family: Inter;
-}
-
-p.font1 {
-  font-size: 20px;
-  font-family: Inter, serif;
-}
-
-.styleguide h3 {
-  font-size: 40px;
 }
 
 ul {
@@ -351,17 +290,10 @@ section.prototype {
   text-align: center;
 }
 
-section.inside {
-  text-align: center;
-  height: auto;
-  min-height: 700px;
-  padding: 40px;
-  margin: 20px;
-}
 
 footer {
   text-align: center;
-  border-top: 3px solid black;
+  border-top: 2px solid black;
   padding: 20px;
   background: #f7ded5;
 }
@@ -385,7 +317,7 @@ footer {
 
 @media screen and (max-width: 600px) {
   body {
-    background: red;
+
   }
   .row, .nav {
     flex-direction: column;
