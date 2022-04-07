@@ -2,8 +2,8 @@
 @font-face {
   font-family: Inter;
   src: url(fonts/Inter-Light.otf);
-  font-family: InterBold;
-  src: url(fonts/Inter-Bold.otf);
+  /* font-family: InterBold;
+  src: url(fonts/Inter-Bold.otf); */
 }
 
 * {

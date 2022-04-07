@@ -1,157 +1,247 @@
+/* SHOPPING CART STYLESHEET */
+@font-face {
+  font-family: InterBold;
+  src: url(fonts/Inter-Bold.otf);
+}
 
+section.problem{
+  justify-content: center;
+  text-align: center;
+  padding:50px;
+}
 
+.problem h2{
+  font-family: InterBold;
+  font-size: 40px;
+}
 
-section.cart{
+.problem h1{
+  font-size: 20px;
+}
+
+.problem p{
+  font-size: 20px;
+  padding:20px;
+}
+
+section.cart {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   flex-wrap: wrap;
-background-color: red;
-
-
-
-
-
-
-
+  width: 100%;
+  margin: auto;
 }
 
-div.cart-left{
+div.cart-left {
   border-top: 2px;
   border-bottom: 2px;
   border-color: black;
   border-style: solid;
-
   border-left: none;
   border-right: none;
-  /* background-color: white; */
-  /* width: 40vw; */
-  /* height:50vh; */
-  flex:45%;
+  flex: 45%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
-
-
-
+  flex-wrap: wrap;
 }
 
-div.cart-right{
-
-background-color: #cccccc;
-margin: auto;
-flex: 25%;
-height:50vh;
-display: flex;
-flex-direction: column;
-justify-content:center;
-text-align: center;
-
-
-}
-
-div.details-right{
-
-  padding:30px;
-  border-top: 2px;
-  border-bottom: 2px;
-  border-color: black;
-  border-style: solid;
-
-  border-left: none;
-  border-right: none;
-}
-
-div.info-right{
-  display:flex;
+div.cart-right {
+  background-color: #cccccc;
+  flex: 25%;
+  height: 50vh;
+  display: flex;
   flex-direction: column;
 }
 
-div.individual{
+div.details-right {
+  padding: 30px;
+}
+
+div.info-right {
+  display: flex;
+  flex-direction: column;
+}
+
+div.individual {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-div.total{
+
+div.total {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   border-top: 2px solid black;
 }
 
-.total h2{
-
+.total h2 {
+  font-family: InterBold;
 }
 
-.individual h1{
-
+.individual h1 {
   margin-bottom: 20px;
 }
-div.clothes{
-  border: 20px;
+
+div.clothes {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
 
+section.problem{
+  justify-content: center;
+  text-align: center;
+  /* background-color: blue; */
+}
+
+.circle-01 {
+  position: relative;
+  display: block;
+  margin-right: 500px;
+  color: black;
+  text-align: center;
+
+}
+
+.circle-02 {
+  position: relative;
+  display: block;
+  margin-left: 500px;
+  color: black;
+  text-align: center;
+}
+
+.circle-01:after {
+  display: block;
+
+  padding-bottom: 100%;
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background: url(../images/shop-now.png)no-repeat center center;
+  background-image:cover;
+  content: "";
+}
+
+.circle-02:after {
+  display: block;
+
+  padding-bottom: 100%;
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background: url(../images/shop-now.png)no-repeat center center;
+  background-image:cover;
+  content: "";
+}
+
+.circle-01-inner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.circle-01-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.circle-01-content {
+  display: table-cell;
+  padding: 1em;
+  vertical-align: middle;
+}
+
+.circle-01 h2 {
+  padding: 20px;
+  font-size: 40px;
+  font-family: InterBold;
+}
+
+.circle-01 p {
+  font-size: 20px;
+}
+
+.circle-02 h2 {
+    font-size: 40px;
+  font-family: InterBold;
+}
+
+.circle-02 p{
+  font-size: 20px;
 }
 
 
 
-div.info{
+div.info {
   padding: 20px;
 }
 
-div.details{
-
+div.details {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .cart-left h2 {
   font-size: 25px;
   padding: 20px;
-
 }
 
-.details h1{
-    font-size: 20px;
-    padding: 20px;
+.details h1 {
+  font-size: 20px;
+  padding: 20px;
 }
 
-
-
-.cart-left img{
+.cart-left img {
   cursor: pointer;
   margin: auto;
-  width:100%;
-  height:200px;
-  padding:20px;
-
+  width: 100%;
+  height: 150px;
+  padding: 20px;
 }
 
-.cart-left p{
-  padding:20px;
+.cart-left p {
+  padding: 20px;
 }
 
 #secret-document {
   display: none;
   margin: auto;
-  width: 50vw;
-  font
+  /* background-color: #e6dcdc; */
 }
 
 #button {
+  background-color: black;
+  color: white;
+  text-align: center;
   margin: auto;
   cursor: pointer;
   padding: 20px;
-  width: 150px;
+  width: 250px;
+}
+
+#button:hover {
+  background-color: #454545;
 }
 
 @media screen and (max-width: 992px) {
-
-
+  .circle-01 {
+    /* padding: 100px; */
+    position: relative;
+    display: block;
+    margin-right: 100px;
+    /* background-color: blue; */
+    color: black;
+    text-align: center;
+  }
 
 }
 
-@media screen and (max-width: 600px) {
-
-}
+@media screen and (max-width: 600px) {}
