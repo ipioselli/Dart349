@@ -1,27 +1,30 @@
 /* SHOPPING CART STYLESHEET */
+
 @font-face {
+  font-family: Inter;
+  src: url(fonts/Inter-Light.otf);
   font-family: InterBold;
   src: url(fonts/Inter-Bold.otf);
 }
 
-section.problem{
+section.problem {
   justify-content: center;
   text-align: center;
-  padding:50px;
+  padding: 50px;
 }
 
-.problem h2{
+.problem h2 {
   font-family: InterBold;
   font-size: 40px;
 }
 
-.problem h1{
+.problem h1 {
   font-size: 20px;
 }
 
-.problem p{
+.problem p {
   font-size: 20px;
-  padding:20px;
+  padding: 20px;
 }
 
 section.cart {
@@ -77,20 +80,26 @@ div.total {
 }
 
 .total h2 {
+  font-size: 20px;
+  margin-top: 10px;
   font-family: InterBold;
 }
 
 .individual h1 {
   margin-bottom: 20px;
+  font-size: 20px;
 }
-
+h1.tax{
+  margin-top: 10px;
+  font-size: 15px;
+}
 div.clothes {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-section.problem{
+section.problem {
   justify-content: center;
   text-align: center;
   /* background-color: blue; */
@@ -102,7 +111,6 @@ section.problem{
   margin-right: 500px;
   color: black;
   text-align: center;
-
 }
 
 .circle-02 {
@@ -113,31 +121,57 @@ section.problem{
   text-align: center;
 }
 
+.circle-03 {
+  position: relative;
+  display: block;
+  margin-right: 500px;
+  color: black;
+  text-align: center;
+}
+
 .circle-01:after {
   display: block;
-
   padding-bottom: 100%;
   width: 100%;
   height: 0;
   border-radius: 50%;
   background: url(../images/shop-now.png)no-repeat center center;
-  background-image:cover;
+  background-image: cover;
   content: "";
 }
 
 .circle-02:after {
   display: block;
-
   padding-bottom: 100%;
   width: 100%;
   height: 0;
   border-radius: 50%;
   background: url(../images/shop-now.png)no-repeat center center;
-  background-image:cover;
+  background-image: cover;
+  content: "";
+}
+
+.circle-03:after {
+  display: block;
+  padding-bottom: 100%;
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background: url(../images/shop-now.png)no-repeat center center;
+  background-image: cover;
   content: "";
 }
 
 .circle-01-inner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.circle-02-inner {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -152,7 +186,19 @@ section.problem{
   height: 100%;
 }
 
+.circle-02-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
 .circle-01-content {
+  display: table-cell;
+  padding: 1em;
+  vertical-align: middle;
+}
+
+.circle-02-content {
   display: table-cell;
   padding: 1em;
   vertical-align: middle;
@@ -169,15 +215,13 @@ section.problem{
 }
 
 .circle-02 h2 {
-    font-size: 40px;
+  font-size: 40px;
   font-family: InterBold;
 }
 
-.circle-02 p{
+.circle-02 p {
   font-size: 20px;
 }
-
-
 
 div.info {
   padding: 20px;
@@ -190,12 +234,12 @@ div.details {
 }
 
 .cart-left h2 {
-  font-size: 25px;
+  font-size: 20px;
   padding: 20px;
 }
 
 .details h1 {
-  font-size: 20px;
+  font-size: 15px;
   padding: 20px;
 }
 
@@ -231,17 +275,62 @@ div.details {
   background-color: #454545;
 }
 
+/* for ipad */
 @media screen and (max-width: 992px) {
   .circle-01 {
-    /* padding: 100px; */
-    position: relative;
-    display: block;
-    margin-right: 100px;
-    /* background-color: blue; */
-    color: black;
-    text-align: center;
+    margin: 50px;
+    font-size: 10px;
   }
 
+  .circle-02 {
+    margin: 50px;
+  }
+
+  #secre-document {
+    display: flex;
+    flex-direction:
+  }
 }
 
-@media screen and (max-width: 600px) {}
+/* for iphone */
+@media screen and (max-width: 600px) {
+  .circle-01 {
+    margin: 20px;
+  }
+
+  .circle-02 {
+    margin: 20px;
+  }
+
+  .circle-01 h2 {
+    font-size: 10px;
+    padding: 0px;
+  }
+
+  .circle-01 p {
+    font-size: 5px;
+  }
+
+  .circle-02 h2 {
+    font-size: 10px;
+  }
+
+  .circle-02 p {
+    font-size: 5px;
+  }
+
+  .problem p {
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  .problem h2 {
+    font-size: 15px;
+    padding: 5px;
+  }
+
+  .problem h1 {
+    font-size: 10px;
+    padding: 5px;
+  }
+}
