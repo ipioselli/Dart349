@@ -11,7 +11,8 @@
   <link rel="stylesheet" href="css/slideshow.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/about.css">
-  <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/cart.css">
 
 </head>
 
@@ -46,36 +47,50 @@
   <!-- main container -->
   <section class="home-container">
 
-  <section class="about-us">
-    <h2>WE’D LOVE TO HEAR FROM YOU</h2>
-  </section>
-
-  <section class="contact-us">
-    <h2>Opening Hours</h2>
-    <h1>Monday to Sunday 8 am-11 pm</h1>
-    <h2>Call us</h2>
-    <h1>1-855-272-7007</h1>
-  </section>
-
-  <section class="meet-the-crew ">
-    <section class="title">
-      <h2>MEET THE CREW</h2>
+    <section class="about-us">
+      <h2>SHOPPING CART</h2>
     </section>
 
-    <section class="picture ">
-      <img src="../images/bad-workers.png" alt="">
+    <section class="cart">
+      <div class="cart-left">
+
+        <div class="clothes">
+          <figure>
+            <img src="../images/pants.jpeg" alt="">
+          </figure>
+          <div class="info">
+            <h2>Long black dress</h2>
+            <div class="details">
+              <h1>Color</h1>
+              <h1>size</h1>
+              <h1>$29.99</h1>
+            </div>
+          </div>
+        </div>
+        <div class="clothes">
+          <figure>
+            <img src="../images/pants.jpeg" alt="">
+          </figure>
+          <div class="info">
+            <h2>Long black dress</h2>
+            <div class="details">
+              <h1>Color</h1>
+              <h1>size</h1>
+              <h1>$29.99</h1>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="cart-right">
+        <div class="info-right">
+          <h2>Items:</h2>
+          <h2>Order Value</h2>
+          <h2>Total</h2>
+        </div>
+      </div>
     </section>
-    <section class="text show-on-scroll">
-      <p>Our young workers are working tirelessly at very low wages to produce the cheapest possible clothing. We manufacture all our clothing in low-income countries. Don't worry they have the best working conditions! We make sure to rarely enforce safety procedures so that workers can be at maximum risk of catching diseases or getting hurt. </p>
-      <p>
-        Some of our best workers are very young since they can work very fast at even lower costs! But don't worry were not the only ones doing this... over 170 million chlldren accross the world are engaged in child labour.
-      </p>
-    </section>
-
-
-  </section>
-
-
 
   </section>
 
@@ -113,21 +128,7 @@
   <script src="js/show-on-scroll.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-  <!-- slideshow script  -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      effect: "fade",
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-  </script>
+
 
 </body>
 

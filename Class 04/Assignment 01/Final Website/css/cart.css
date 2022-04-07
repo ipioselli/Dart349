@@ -1,0 +1,106 @@
+section.cart{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+
+
+
+
+
+}
+
+div.cart-left{
+  border-top: 2px;
+  border-bottom: 2px;
+  border-color: black;
+  border-style: solid;
+
+  border-left: none;
+  border-right: none;
+  /* background-color: white; */
+  /* width: 40vw; */
+  /* height:50vh; */
+  flex:45%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+
+
+
+}
+
+div.cart-right{
+
+background-color: #cccccc;
+margin: auto;
+flex: 25%;
+display: flex;
+flex-direction: row;
+/* justify-content:center;
+text-align: center; */
+
+
+}
+
+div.clothes{
+  border: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+div.info{
+  padding: 20px;
+}
+
+div.details{
+
+  display: flex;
+  flex-direction: row;
+}
+
+.cart-left h2 {
+  font-size: 25px;
+  padding: 20px;
+
+}
+
+.details h1{
+    font-size: 20px;
+    padding: 20px;
+}
+
+
+
+.cart-left img{
+  cursor: pointer;
+  margin: auto;
+  width:100%;
+  height:200px;
+  padding:20px;
+
+}
+
+.cart-left p{
+  padding:20px;
+}
+
+@media screen and (max-width: 992px) {
+
+.meet-the-crew h2{
+  font-size: 20px;
+}
+
+.contact-us h2{
+  font-size: 20px;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+
+}
