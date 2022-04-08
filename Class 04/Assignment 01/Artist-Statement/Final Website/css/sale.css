@@ -12,7 +12,7 @@ section.sale {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: url(/images/shop-now.png) no-repeat center center;
+  background: url(../images/shop-now.png) no-repeat center center;
   background-image: cover;
   margin-bottom: 20px;
 }
