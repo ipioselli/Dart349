@@ -238,13 +238,26 @@ background-color: #454545;
 @media screen and (max-width: 992px) {
 
 #second-box{
-margin:10px;
+margin:20px;
 padding:20px;
 }
 
+#third-box{
+  margin:20px;
+  padding:20px;
+}
+
 .first-box{
-  margin:10px;
-    padding:20px;
+  margin:20px;
+  padding:20px;
+}
+
+#secret-men h1{
+  font-size: 15px;
+}
+
+#secret-men h2{
+  font-size: 20px;
 }
 
 
