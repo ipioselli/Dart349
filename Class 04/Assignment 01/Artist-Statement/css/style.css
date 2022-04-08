@@ -244,21 +244,22 @@ section.final {
   color: white;
 }
 
-ul {
-  padding: 25px;
-}
+
 
 li {
   font-size: 30px;
 }
 
-.styleguide a {
+.final a {
   text-decoration: none;
   color: black;
 }
 
-.styleguide a:hover {
+.final a:hover {
   color: white;
+}
+h1.sources{
+  padding:20px;
 }
 
 .wireframe h3 {

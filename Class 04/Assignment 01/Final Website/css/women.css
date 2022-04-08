@@ -1,15 +1,16 @@
 
 .women-container{
   width:100%;
-  
+
   margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
 .clothing-module{
+  padding: 20px;
   position: relative;
   z-index: 1;
   display: block;
