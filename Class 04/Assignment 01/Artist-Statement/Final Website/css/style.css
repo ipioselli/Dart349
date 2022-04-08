@@ -356,6 +356,10 @@ footer.bottom{
 
 @media screen and (max-width: 992px) {
 
+  section.home-container{
+    width: 90vw;
+  }
+
 
   .shop-now h1{
     font-size: 20px;
