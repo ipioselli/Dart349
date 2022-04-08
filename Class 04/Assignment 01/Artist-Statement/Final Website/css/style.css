@@ -1,5 +1,6 @@
 /* CSS RESET */
 @font-face {
+
   font-family: Inter;
   src: url(fonts/Inter-Light.otf);
 }
@@ -21,13 +22,14 @@ div.header {
   margin: auto;
   width: 20vw;
   height: auto;
-  min-height: 20vh;
+  min-height: 15vh;
   justify-content: center;
   align-items: center;
+
 }
 
 .header img {
-  height: 100px;
+  height: 80px;
   width: 100%;
 }
 .header img:hover{
@@ -46,6 +48,7 @@ div.header {
   justify-content: flex-end;
   align-items: flex-end;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .navbar a:visited {
@@ -71,12 +74,14 @@ div.header {
 }
 
 .main-nav {
+
   justify-content: center;
   display: flex;
+  flex-flow: wrap;
 }
 
 .main-nav a {
-
+  text-transform: uppercase;
   color: black;
   font-size: 20px;
   padding: 10px;
@@ -92,10 +97,7 @@ div.header {
   text-decoration: none;
 }
 .main-nav a:hover {
-  border-color: black;
-  border-style: solid;
-  border-radius:  50px ;
-  border-width: 2px;
+  text-decoration: underline;
 
 }
 
@@ -104,7 +106,7 @@ section.home-container {
   margin: auto;
   padding: 50px;
   width: 75vw;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
 
 section.coupons {
@@ -251,9 +253,7 @@ section.membership{
 .influencer{
   margin: auto;
   width:100%;
-  /* height:50vh; */
   background-color:#aa9fd1;
-
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -273,6 +273,8 @@ background-size: cover;
 
 
 .influencer-main{
+  justify-content: center;
+  align-items: center;
   position: relative;
   text-align: center;
   flex: 50%;
@@ -288,7 +290,6 @@ background-size: cover;
   color: black;
   background-color: white;
   border-radius: 30px;
-  /* padding: 30px 50px; */
   text-decoration: none;
   font-size: 20px;
   transition: all 0.5s;
@@ -303,9 +304,13 @@ background-size: cover;
   padding:40px;
 }
 
+.influencer h2{
+  font-size: 30px;
+}
 
 
 
+/* footer properties */
 
 footer {
   justify-content: space-around;
@@ -339,4 +344,74 @@ footer.bottom{
   height: 15vh;
   background: url(../images/coupon-bg.png);
   background-size: cover;
+}
+
+@media screen and (max-width: 992px) {
+
+
+  .shop-now h1{
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .shop-now h2{
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  .shop-now a {
+
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+    /* padding: 30px 50px; */
+    text-decoration: none;
+    font-size: 10px;
+    transition: all 0.5s;
+    box-shadow: 0 5px 10px 0px grey;
+  }
+  .influencer-main h2{
+    padding: 10px;
+    font-size: 20px;
+  }
+  .influencer-main{
+    flex: 50%;
+    padding: 0px;
+
+
+
+  }
+
+  .influencer-main a {
+    padding: 5px;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 10px;
+    transition: all 0.5s;
+    box-shadow: 0 5px 10px 0px white;
+
+  }
+  .influencer-main figure{
+
+  }
+
+  .membership h1{
+    color: black;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .membership h2{
+    font-size: 10px;
+  }
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+
 }

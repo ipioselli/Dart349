@@ -10,8 +10,10 @@
   <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/slideshow.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/about.css">
   <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/sale.css">
 
 </head>
 
@@ -36,8 +38,8 @@
 
   <!-- main nav bar -->
   <nav class="main-nav">
-    <a href="">Women</a>
-    <a href="">Men</a>
+    <a href="women.html">Women</a>
+    <a href="men.html">Men</a>
     <a href="sale.html">Sale</a>
     <a href="about.html">About us</a>
     <a href="contact.html">Contact</a>
@@ -47,37 +49,53 @@
   <section class="home-container">
 
   <section class="about-us">
-    <h2>WE’D LOVE TO HEAR FROM YOU</h2>
+    <h2>SALE</h2>
   </section>
 
-  <section class="contact-us">
-    <h2>Opening Hours</h2>
-    <h1>Monday to Sunday 8 am-11 pm</h1>
-    <h2>Call us</h2>
-    <h1>1-855-272-7007</h1>
+  <section class="sale">
+    <h1>Explore our trendiest spring clothing!</h1>
+    <h2>SPRING SALE</h2>
+    <h1>Up to 50% off 100s of styles</h1>
+
+    <h3 id="sale-button">
+      Sale
+    </h3>
   </section>
 
-  <section class="meet-the-crew ">
-    <section class="title">
-      <h2>MEET THE CREW</h2>
+  <section id="secret-info">
+    <section class="sale-info">
+
+      <h2>HOW TO SPOT FAST FASHION BRANDS</h2>
+      <h1>Sorry no sale here</h1>
+      <h1>*We are trying to bring awareness on fast fashion and over consumption*</h1>
+      <section class="list show-on-scroll">
+        <li>They have thousands of styles which follow all the latest trends</li>
+      </section>
+      <section class="list show-on-scroll">
+        <li>They have an extremely short turnaround from when the clothing item is seen on the catwalk/celebrity.</li>
+      </section>
+      <section class="list show-on-scroll">
+        <li>Manufacturing is done in low-income countries in which workers are paid very low wages.</li>
+      </section>
+      <section class="list show-on-scroll">
+        <li>Materials are very low quality such as polyester which cause consumers to discard after only a few uses.</li>
+      </section>
+      <section class="list show-on-scroll">
+        <li>The websites have limited quantities to get consumers to buy as fast as possible before the items sell out.</li>
+      </section>
+
     </section>
 
-    <section class="picture ">
-      <img src="./images/bad-workers.png" alt="">
-    </section>
-    <section class="text show-on-scroll">
-      <p>Our young workers are working tirelessly at very low wages to produce the cheapest possible clothing. We manufacture all our clothing in low-income countries. Don't worry they have the best working conditions! We make sure to rarely enforce safety procedures so that workers can be at maximum risk of catching diseases or getting hurt. </p>
-      <p>
-        Some of our best workers are very young since they can work very fast at even lower costs! But don't worry were not the only ones doing this... over 170 million chlldren accross the world are engaged in child labour.
-      </p>
-    </section>
+  </section>
+
+
 
 
   </section>
 
 
 
-  </section>
+
 
   <!-- Footer Info -->
   <footer>
@@ -111,23 +129,8 @@
 
   <!-- <script src="js/scroll.js"></script> -->
   <script src="js/show-on-scroll.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
 
-  <!-- slideshow script  -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      effect: "fade",
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-  </script>
 
 </body>
 
