@@ -341,9 +341,17 @@ footer {
 }
 
 footer.bottom{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   height: 15vh;
   background: url(../images/coupon-bg.png);
   background-size: cover;
+}
+
+.bottom h2{
+  font-size: 20px;
 }
 
 @media screen and (max-width: 992px) {
