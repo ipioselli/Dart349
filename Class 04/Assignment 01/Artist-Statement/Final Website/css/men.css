@@ -238,17 +238,20 @@ background-color: #454545;
 @media screen and (max-width: 992px) {
 
 #second-box{
-margin:20px;
+margin:15px;
+
 padding:20px;
 }
 
 #third-box{
-  margin:20px;
+
+margin:15px;
   padding:20px;
 }
 
 .first-box{
-  margin:20px;
+
+margin:15px;
   padding:20px;
 }
 
@@ -260,12 +263,16 @@ padding:20px;
   font-size: 20px;
 }
 
-
-
-
+section.show-more{
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
 
 
 }
+
+
 
 @media screen and (max-width: 600px) {
 

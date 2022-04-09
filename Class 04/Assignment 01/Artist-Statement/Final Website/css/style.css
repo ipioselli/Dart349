@@ -1,4 +1,6 @@
 /* CSS RESET */
+/* homepage style sheet */
+
 @font-face {
 
   font-family: Inter;
@@ -185,11 +187,39 @@ section.discount {
   margin: auto;
   cursor: pointer;
   padding: 20px;
-  width: 250px;
+  max-width: 250px;
 }
 
 #shop:hover {
   box-shadow: 0 8px 20px 0px white;
+}
+
+#shop-02{
+
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 0.5s;
+  border-radius: 30px;
+  box-shadow: 0 5px 10px 0px white;
+  background-color: white;
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+  padding: 20px;
+  max-width: 250px;
+}
+
+#shop-02:hover {
+  box-shadow: 0 8px 20px 0px white;
+}
+
+
+#shop-secret-02 {
+
+    display: none;
+    margin: auto;
+    font-size: 20px;
 }
 
 #shop-secret{
@@ -199,7 +229,13 @@ section.discount {
     font-size: 20px;
 }
 
-.shop-secret-01 h2{
+#shop-secret-02 h1{
+  padding: 20px;
+  font-size:20px;
+}
+
+#shop-secret h1{
+  padding: 20px;
   font-size:20px;
 }
 
@@ -391,7 +427,6 @@ footer.bottom{
     background-color: white;
     border-radius: 30px;
     padding: 10px;
-    /* padding: 30px 50px; */
     text-decoration: none;
     font-size: 10px;
     transition: all 0.5s;
@@ -405,24 +440,9 @@ footer.bottom{
     flex: 50%;
     padding: 0px;
 
-
-
   }
 
-  .influencer-main a {
-    padding: 5px;
-    color: black;
-    background-color: white;
-    border-radius: 20px;
-    text-decoration: none;
-    font-size: 10px;
-    transition: all 0.5s;
-    box-shadow: 0 5px 10px 0px white;
 
-  }
-  .influencer-main figure{
-
-  }
 
   .membership h1{
     color: black;
@@ -431,6 +451,24 @@ footer.bottom{
   }
 
   .membership h2{
+    font-size: 10px;
+  }
+
+  #shop{
+      font-size: 10px;
+      padding: 10px;
+  }
+
+  #shop-02{
+      font-size: 10px;
+      padding: 10px;
+  }
+
+  #shop-secret h1{
+    font-size: 10px;
+  }
+
+  #shop-secret-02 h1{
     font-size: 10px;
   }
 

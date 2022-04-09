@@ -32,3 +32,7 @@ $(`#button-02`).on(`click`, function(event){
 $(`#shop`).on(`click`, function(event){
   $(`#shop-secret`).fadeIn();
 });
+
+$(`#shop-02`).on(`click`, function(event){
+  $(`#shop-secret-02`).fadeIn();
+});

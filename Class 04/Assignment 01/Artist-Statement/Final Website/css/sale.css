@@ -7,8 +7,8 @@
 }
 
 section.sale {
+  margin: auto;
   height: 50vh;
-  background-color: red;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -43,7 +43,7 @@ section.sale {
   margin: auto;
   cursor: pointer;
   padding: 20px;
-  width: 250px;
+  max-width: 250px;
 }
 
 #sale-button:hover {
@@ -101,6 +101,44 @@ section.list {
   border-top: 3px solid black;
 }
 
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
 
-@media screen and (max-width: 600px) {}
+  #sale-button{
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  .sale h2{
+    font-size: 20px;
+  }
+
+  .sale h1{
+    font-size: 15px;
+  }
+
+  section.sale{
+    height:30vh;
+  }
+
+  .sale-info {
+    padding: 20px;
+  }
+  .sale-info h2{
+    font-size: 20px;
+  }
+  .sale-info h1{
+    font-size: 10px;
+  }
+
+  .list li {
+
+    font-size: 15px;
+  }
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+}
