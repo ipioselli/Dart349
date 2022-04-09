@@ -102,7 +102,6 @@ div.clothes {
 section.problem {
   justify-content: center;
   text-align: center;
-  /* background-color: blue; */
 }
 
 .circle-01 {
@@ -129,7 +128,7 @@ section.problem {
   width: 100%;
   height: 0;
   border-radius: 50%;
-  background: url(../images/shop-now.png)no-repeat center center;
+  background: url(../images/cart.png)no-repeat center center;
   background-image: cover;
   content: "";
 }
@@ -140,7 +139,7 @@ section.problem {
   width: 100%;
   height: 0;
   border-radius: 50%;
-  background: url(../images/shop-now.png)no-repeat center center;
+  background: url(../images/cart.png)no-repeat center center;
   background-image: cover;
   content: "";
 }
@@ -151,7 +150,7 @@ section.problem {
   width: 100%;
   height: 0;
   border-radius: 50%;
-  background: url(../images/shop-now.png)no-repeat center center;
+  background: url(../images/cart.png)no-repeat center center;
   background-image: cover;
   content: "";
 }
