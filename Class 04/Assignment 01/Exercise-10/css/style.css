@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+div.header {
+  z-index: 1;
+  position: relative;
+  margin: auto;
+  width: 20vw;
+  height: auto;
+  min-height: 10vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.header img {
+  height: 100px;
+  width: 100%;
+}
+
+.navbar {
+  padding: 50px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  display: flex;
+}
+
+.navbar a:visited {
+  text-decoration: none;
+}
+
+.navbar a {
+  color: black;
+  font-size: 20px;
+  padding: 20px 20px;
+}
+
+.navbar a:link {
+  text-decoration: none;
+}
+
+.main-nav {
+  justify-content: center;
+  display: flex;
+}
+
+.main-nav a {
+  font-size: 20px;
+  padding: 20px;
+  margin: 15px 25px;
+  text-decoration: none;
+  text-align: center;
+}
+
+section.home-container {
+  margin: auto;
+  padding: 50px;
+  width: 70vw;
+  margin-bottom: 200px;
+}
+
+section.coupons {
+  margin-bottom: 20px;
+  width: 100%;
+  z-index: 0;
+  overflow: hidden;
+  height: 10vh;
+  background: url(../images/coupon-bg.png);
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+}
+
+.container {
+  left: 0;
+  bottom: 180px;
+}
+
+section.new {
+  width: 100%;
+  height: 50vh;
+  padding-top: 200px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/shop-now.png);
+  background-size: cover;
+}
+
+section.discount{
+  align-items: center;
+    justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 50vh;
+  background: url(../images/discount.png) no-repeat center center;;
+  /* background-size: cover; */
+
+}
+
+.shop-now a {
+  color: black;
+  background-color: white;
+  border-radius: 30px;
+  padding: 30px 50px;
+  text-decoration: none;
+  font-size: 30px;
+  transition: all 0.5s;
+  box-shadow: 0 5px 10px 0px grey;
+}
+.shop-now a:hover{
+  box-shadow: 0 8px 20px 0px white;
+}
+
+footer {
+  margin: auto;
+  padding: 50px;
+  width: 100%;
+  background-color: #f7ded5;
+}
