@@ -107,7 +107,7 @@ section.problem {
 .circle-01 {
   position: relative;
   display: block;
-  margin-right: 500px;
+  margin-right: 550px;
   color: black;
   text-align: center;
 }
@@ -115,7 +115,7 @@ section.problem {
 .circle-02 {
   position: relative;
   display: block;
-  margin-left: 500px;
+  margin-left: 550px;
   color: black;
   text-align: center;
 }
@@ -268,7 +268,6 @@ div.details {
 
   display: none;
   margin: auto;
-  /* background-color: #e6dcdc; */
 }
 
 #button {
@@ -296,10 +295,6 @@ div.details {
     margin: 50px;
   }
 
-  /* #secret-document {
-    display: flex;
-    flex-direction:
-  } */
 }
 
 /* for iphone */

@@ -11,6 +11,7 @@ body {
 }
 
 header h1 {
+
   letter-spacing: 5px;
 
   text-align: center;
@@ -22,7 +23,7 @@ header h1 {
 
 header h2 {
   letter-spacing: 5px;
-  font-family: serif, georgia;
+
   text-align: center;
   color: #7e799c;
   font-size: 40;
@@ -132,7 +133,8 @@ section.aboutme article h4 {
 /*Class assignments and assignmentsFlex*/
 .assignments {
   margin: auto;
-  padding: 20px;
+  padding: 50px;
+  width:75vw;
 }
 
 .assignments h4 {
@@ -144,7 +146,7 @@ section.assignmentsFlex {
   padding: 10px;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
 
@@ -154,13 +156,20 @@ section.assignmentsFlex {
 
   border-radius: 10px;
   width: 300px;
-  height: 300px;
+  height: 400px;
   background: #cad0de;
   font-size: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.assignmentsFlex p {
+padding: 10px;
+font-size: 20px;
+letter-spacing: 0px;
+}
+
 
 .assignmentsFlex a:link {
   color: #7e799c;
@@ -194,11 +203,12 @@ section.midterm {
 }
 
 .midterm a:hover{
-  color: black;
+  color:#f2c4c4;
 }
 
 /*FOOTER PROPERTIES*/
 footer {
+  height:20vh;
   border-top: 2px solid #7e799c;
   letter-spacing: 5px;
   font-size: 20px;
