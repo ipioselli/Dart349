@@ -172,21 +172,35 @@ section.discount {
 }
 
 
-.shop-now a {
+#shop{
 
   color: black;
-  background-color: white;
-  border-radius: 30px;
-  padding: 10px;
-  /* padding: 30px 50px; */
   text-decoration: none;
   font-size: 20px;
   transition: all 0.5s;
-  box-shadow: 0 5px 10px 0px grey;
+  border-radius: 30px;
+  box-shadow: 0 5px 10px 0px white;
+  background-color: white;
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+  padding: 20px;
+  width: 250px;
 }
 
-.shop-now a:hover {
+#shop:hover {
   box-shadow: 0 8px 20px 0px white;
+}
+
+#shop-secret{
+
+    display: none;
+    margin: auto;
+    font-size: 20px;
+}
+
+.shop-secret-01 h2{
+  font-size:20px;
 }
 
 .mySlides img{

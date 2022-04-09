@@ -190,14 +190,30 @@ section.problem {
   display: table-cell;
   padding: 1em;
   vertical-align: middle;
+  opacity: 0;
+  transform: translateX(3em);
+  transition: all .5s .35s ease-out;
+  will-change: all;
+}
+
+.circle-01-content.is-visible{
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .circle-02-content {
   display: table-cell;
   padding: 1em;
   vertical-align: middle;
+  opacity: 0;
+  transform: translateX(-3em);
+  transition: all .5s .35s ease-out;
+  will-change: all;
 }
-
+.circle-02-content.is-visible{
+  opacity: 1;
+  transform: translateX(0);
+}
 .circle-01 h2 {
   padding: 20px;
   font-size: 40px;
@@ -250,7 +266,7 @@ div.details {
 }
 
 #secret-document {
-  
+
   display: none;
   margin: auto;
   /* background-color: #e6dcdc; */
@@ -281,7 +297,7 @@ div.details {
     margin: 50px;
   }
 
-  #secre-document {
+  #secret-document {
     display: flex;
     flex-direction:
   }

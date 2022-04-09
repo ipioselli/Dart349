@@ -28,3 +28,7 @@ $(`#button-01`).on(`click`, function(event){
 $(`#button-02`).on(`click`, function(event){
   $(`#third-box`).fadeIn();
 });
+
+$(`#shop`).on(`click`, function(event){
+  $(`#shop-secret`).fadeIn();
+});
