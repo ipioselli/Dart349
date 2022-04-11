@@ -410,6 +410,21 @@ footer.bottom{
     width: 90vw;
   }
 
+.navbar{
+  padding: 10px;
+  justify-content: center;
+    align-items: center;
+}
+  .navbar a{
+    font-size: 15px;
+
+  }
+
+  .main-nav a{
+    font-size: 15px;
+
+  }
+
 
   .shop-now h1{
     font-size: 20px;

@@ -1,3 +1,9 @@
+@font-face {
+  font-family: Inter;
+  src: url(fonts/Inter-Light.otf);
+  font-family: InterBold;
+  src: url(fonts/Inter-Bold.otf);
+}
 .slide-left {
 	opacity: 0;
 	transform: translateX(2em);
