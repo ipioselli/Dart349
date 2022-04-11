@@ -407,7 +407,7 @@ footer.bottom{
 @media screen and (max-width: 992px) {
 
   section.home-container{
-    width: 90vw;
+    width: 100vw;
   }
 
 .navbar{
@@ -486,6 +486,15 @@ footer.bottom{
   #shop-secret-02 h1{
     font-size: 10px;
   }
+
+.shop-footer h1{
+font-size: 15px;
+}
+
+.shop-footer h2{
+  font-size: 10px;
+}
+
 
 
 

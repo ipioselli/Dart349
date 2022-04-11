@@ -106,6 +106,7 @@ section.list {
   #sale-button{
     font-size: 10px;
     padding: 10px;
+    max-width: 100px;
   }
 
   .sale h2{
@@ -117,7 +118,7 @@ section.list {
   }
 
   section.sale{
-    height:30vh;
+    height:40vh;
   }
 
   .sale-info {
